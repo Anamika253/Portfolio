@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<script src="https://kit.fontawesome.com/f2357a20c2.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="portfolio.css">
+<link rel="icon" type="image/x-icon" href="images/favion.ico">
+<body>
+
+    
+   <div id="header">
+    
+    <div class="container">
+        <nav> 
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Hire me</a></li>
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+       
+        <div class="name">
+            <div class="text">
+            
+            <h1>Hi, I'm <span>Anamika</span></h1>
+            <p>Front-End Developer | Java | DBMS </p>
+            <a href="resume.pdf" download class="button btn2">Download CV</a>
+        </div class ="back">
+        <img src="images/intro.png" alt="">
+        </div>
+    </div>
+   </div>
+
+
+
+     <!--  about move page -->
+
+
+     
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img class ="img" src="images/bio.png">
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-title">
+                    About Me
+                </h1>
+            
+                <p>I am Instrumentation and control engineering student in Sant Longowal Institute of Engineering and Technology, Punjab.
+                    Dedicated and resourceful aspirant with a diverse background, 
+                    showcasing adaptability and a strong work ethic. Leveraging skills 
+                    developed through experiences at a tier 3 college, I bring a unique perspective to 
+                    problem-solving and contribute effectively in dynamic, cross-functional environments.
+                </p>
+
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick = "opentab('skills')">Skills</p> 
+                    <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
+                    <p class = "tab-links" onclick = "opentab('education')"> Education</p> 
+                    <p class="tab-links" onclick ="opentab('Certificates')" >Certificates </p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front End Developer (HTML, CSS and JS)</span> <br>Designing interactive web interfaces</li>
+                        <li><span>Java </span> <br>Understanding the concepts of  OOPs, Collections, Multithreading, Error Handling etc.</li>
+                        <li><span>Python </span> <br>Learn the basics along with data structures of python, and some of its libraries too.</li>
+                        <li><span>SQL & MySQL</span> <br>Extract, organize, manage and manipulate data</li>
+                        
+                    </ul> 
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+            
+                        <li><span>June,2023</span> <br>Front-End Development in Sofcon Training Institute</li>
+                        <li><span>June 2022 </span> <br>IoT Training in SLIET Longowal</li>
+                        
+                    </ul> 
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelors of Engineering </span> <br>Sant Longowal Institute of Engineering and Technology, Longowal Punjab, 2024</li>
+                        <li><span>Intermediate</span> <br>St. Marys School, Mainpuri, 2019</li>
+                        <li><span>High School</span> <br>St.  Marys School, Mainpuri, 2017</li>
+                    </ul> 
+                </div>
+                <div class ="tab-contents" id ="Certificates">
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1OcyyjE_6U9dsmW0mp00zYpC2o3JXJbTs/view?usp=drive_link">Java Language</a><br><span>December, 2023</span> </li>
+                        <li><a href="https://drive.google.com/file/d/1nyaGCFLnWRe9ohXKYIj3ZPs2UEmgfVee/view?usp=drive_link">Database Management Systems</a><br><span>December, 2023</span> </li>
+                        <li><a href="https://drive.google.com/file/d/1wDZzq6IbGP3Nvz2R-Z5ODWV6XvHHNAKF/view?usp=drive_link">Data Structures And Algorithm in Java</a><br><span>October, 2023</span> </li>
+                     
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+
+   <!-- Project -->
+<div id="project">
+    <div class="project-heading">
+    <span>Let's see my Work !</span>
+    <h3>My Projects</h3>
+    </div>
+    <ul class="project-filter">
+        
+        <li  class="project-filter active-project" onmouseover="openlink('Graphic')">Graphics & web Designing</li>
+        <li  class="project-filter" onmouseover="openlink('Weather')">Weather Update Page</li>
+        <li  class="project-filter" onmouseover="openlink('Music')">Play Music</li>
+        <li  class="project-filter" onmouseover="openlink('Iot')">IoT </li>
+    </ul>
+    
+    <div class="project-container">
+        <a  id="Graphic" href="#" class="project-details active-detail">
+            <img src="images/graphics.png" alt="project">
+        </a>
+        <a  id="Weather" href="#" class="project-details" id="Weather">
+            <img src="images/weather.png" alt="project">
+        </a>
+        <a id="Music" href="#" class="project-details" >
+            <img src="images/web.png" alt="project">
+        </a>
+        <a  id="Iot" href="#" class="project-details" >
+            <img src="images/IOT.png" alt="project">
+        </a>
+    </div>
+    
+</div>
+
+
+
+
+
+<!--  Contact me -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" >Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>anamikayadavlp@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>1230210308
+                </p>
+                <div class="socialmedia">
+                    <a href="www.linkedin.com/in/anamika-yadav-990b47210"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+            </div>
+            
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" id="" required>
+                    <input type="email" name="email"  placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <script  src="portfolio.js"></script>
+
+</body>
+</html>
